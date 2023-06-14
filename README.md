@@ -1,6 +1,5 @@
 # YouTube Channel Statistics Dashboard
 
-![Dashboard Screenshot](dashboard_screenshot.png)
 
 ## Table of Contents
 

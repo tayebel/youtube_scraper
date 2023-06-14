@@ -1,5 +1,5 @@
 from googleapiclient.discovery import build
-api_key='your_key'
+api_key=input('Please enter your API key:')
 from googleapiclient.discovery import build
 import random as rd
 import string

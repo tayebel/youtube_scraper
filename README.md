@@ -41,7 +41,7 @@ API_KEY: Your YouTube Data API key. You can obtain one by following the instruct
 
 SEARCH_RESULTS: The maximum number of search results to retrieve for each keyword. Increase this value if you want to retrieve more results but note that it may take longer to process.
 
-Keyword Search
+##Keyword Search
 To search for YouTube channels based on keywords, follow these steps:
 
 Enter one or more keywords in the search bar provided.

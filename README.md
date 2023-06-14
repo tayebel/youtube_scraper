@@ -28,7 +28,8 @@ The YouTube Channel Statistics Dashboard is a Python tool that generates an inte
 ## Usage
 Run the Python script:
 ```bash
-    python dashboard.py
+    python run.py
+ ```
     
 Open your web browser and visit http://localhost:8000 to access the dashboard.
 

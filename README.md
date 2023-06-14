@@ -35,11 +35,10 @@ Run the Python script:
 Open your web browser and visit http://localhost:8000 to access the dashboard.
 
 ## Configuration
-Before running the tool, make sure to configure the following settings in the config.json file:
+Before running the tool, make sure to configure the following :
 
 API_KEY: Your YouTube Data API key. You can obtain one by following the instructions at https://developers.google.com/youtube/registering_an_application.
 
-SEARCH_RESULTS: The maximum number of search results to retrieve for each keyword. Increase this value if you want to retrieve more results but note that it may take longer to process.
 
 ## Keyword Search
 To search for YouTube channels based on keywords, follow these steps:

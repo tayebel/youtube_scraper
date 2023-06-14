@@ -1,4 +1,4 @@
-# YouTube Channel Statistics Dashboard
+# YouTube Channels Statistics Dashboard
 
 
 ## Table of Contents

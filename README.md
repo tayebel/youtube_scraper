@@ -1,6 +1,6 @@
 # YouTube Channels Statistics Dashboard
-![Table](/img1.bmp)
-![Figures](/img2.bmp)
+![Table](image1.png)
+![Figures](image2.png)
 
 ## Table of Contents
 

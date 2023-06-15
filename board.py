@@ -16,18 +16,16 @@ class dashboard(yt_analysis):
 
         app.layout = html.Div(children=[
             html.H1(children='Youtube analysis dashboard: '),
-            html.Div(children='''This dash is A web application framework to visualize and analyze different youtube channels either random ones or chosing a specific ones through entering  the inputs (e.g channel keyword)) '''),
+            html.Div(children='''This dash is A web application framework to visualize and analyze different youtube channels either random ones or by searching for a specific ones through entering keywords '''),
 
             html.Label('keywords:'),
-            dcc.Input(
-                id="q"
+            dcc.Input( id="q",type='text'
             ),
             html.Label('maximum results:'),
             dcc.Input(
-                id="m"
+                id="m",type='number'
             ),
            
-            
             html.Button('Update Inputs', id='update-button'),
 
             html.Button('Save Excel Sheet', id='save-button'),
@@ -48,35 +46,26 @@ class dashboard(yt_analysis):
         @callback(
            
             Output(component_id='tbl', component_property='data'),
-         
+            Output(component_id='controls-and-graph', component_property='figure'),
+            Output(component_id='controls', component_property='figure'),
+            
             Input('q', "value"),
             Input('m', "value"),
-    
-            Input('update-button', 'n_clicks'))
+            Input('update-button', 'n_clicks'),
+            Input(component_id='controls-and-radio-item', component_property='value'))
         
         
-        def update(m,q,n_clicks):
+        def update(q,m,n_clicks,col_chosen):
             if n_clicks is not None:
                 self.keyword=q
                 self.maxResults=m
                 self.data ,self.username ,self.video_total, self.subscriber, self.view =self.chan_stats()
-               
-            return self.data
+                df=pd.DataFrame(self.data)
+                fig2= px.pie(df, values=col_chosen, names='channel_name')
+                fig = px.histogram(df, x='channel_name', y=col_chosen, histfunc='avg')
+            return self.data,fig,fig2
  
-        @callback(
-           
-            Output(component_id='controls-and-graph', component_property='figure'),
-            Output(component_id='controls', component_property='figure'),
-            Input(component_id='controls-and-radio-item', component_property='value'))
         
-        def update_fig(col_chosen):
-
-            self.data ,self.username ,self.video_total, self.subscriber, self.view =self.chan_stats()
-            df=pd.DataFrame(self.data)
-            fig2= px.pie(df, values=col_chosen, names='channel_name')
-            fig = px.histogram(df, x='channel_name', y=col_chosen, histfunc='avg')
-            
-            return fig,fig2
         
         @callback(
             Output(component_id='body-div', component_property='children'),

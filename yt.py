@@ -34,7 +34,7 @@ class yt_analysis:
         letters = string.ascii_letters
         self.keyword =''.join(rd.choice(letters) for _ in range(length))
 
-        return self.keyword 
+        return self.keyword
 
     # Process the channels and print their ids
         
@@ -42,9 +42,10 @@ class yt_analysis:
         
         if self.maxResults==None:
             self.maxResults=5
-            
+     
         if self.keyword==None and self.channelId==None:
-            self.keyword=self.get_keyword()  
+            self.keyword=self.get_keyword() 
+      
         
         request = youtube.search().list(
                         channelType=self.channelType,
@@ -144,7 +145,7 @@ class yt_analysis:
             
             
         self.sheet.sheet_format.defaultColWidth  = 20
-        return self.workbook.save("youtube.xlsx")
+        return self.workbook.save("youtube_channels.xlsx")
 
 
 

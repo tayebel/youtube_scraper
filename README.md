@@ -1,5 +1,6 @@
 # YouTube Channels Statistics Dashboard
-
+![Table](img1.png)
+![Figures](img2.png)
 
 ## Table of Contents
 
@@ -32,7 +33,7 @@ Run the Python script:
     python run.py
  ```
     
-Open your web browser and visit http://localhost:8000 to access the dashboard.
+Open your web browser and visit http://localhost:8052 to access the dashboard.
 
 ## Configuration
 Before running the tool, make sure to configure the following :
@@ -50,9 +51,7 @@ Click the "Search" button to initiate the search.
 The tool will retrieve the search results from YouTube and display them on the dashboard.
 
 ## Exporting Data
-To export the displayed statistics as an Excel spreadsheet, follow these steps:
-
-Click the "Export" button located at the top-right corner of the dashboard.
+To export the displayed statistics as an Excel spreadsheet, follow these steps click the "Save Excel Sheet" button located at the top-left corner of the dashboard.
 
 ## Contributing
 Contributions to the YouTube Channel Statistics Dashboard are welcome! If you find any bugs or have suggestions for improvements, please open an issue on the GitHub repository. If you would like to contribute code, feel free to submit a pull request.

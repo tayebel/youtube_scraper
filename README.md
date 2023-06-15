@@ -23,14 +23,14 @@ The YouTube Channel Statistics Dashboard is a Python tool that generates an inte
 
    ```bash
    git clone https://github.com/tayebel/yt.git
-   cd youtube-stats-dashboard
-   pip install -r requirements.txt
+   cd yt
+   pip install  -r requirements.txt  -t ./
    ```
    
 ## Usage
 Run the Python script:
 ```bash
-    python run.py
+ python run.py
  ```
     
 Open your web browser and visit http://localhost:8052 to access the dashboard.

@@ -15,7 +15,7 @@
 
 ## Introduction
 
-The YouTube Channel Statistics Dashboard is a Python tool that generates an interactive dashboard using the Plotly library. It allows users to visualize various statistics of YouTube channels based on keywords provided by the user. The dashboard provides a comprehensive overview of the channel's performance and allows users to save the results as an Excel spreadsheet.
+The YouTube Channel Statistics Dashboard is a simple Python tool that generates an interactive dashboard using the Plotly library. It allows users to visualize various (Views, Total videos and Number subscribers) statistics of YouTube channels based on keywords provided by the user. The dashboard provides a comprehensive overview of the channel's performance and allows users to save the results as an Excel spreadsheet.
 
 ## Installation
 

@@ -46,9 +46,11 @@ To search for YouTube channels based on keywords, follow these steps:
 
 Enter one or more keywords in the search bar provided.
 
-Click the "Search" button to initiate the search.
+Click the "update inputs" button to initiate the search.
 
 The tool will retrieve the search results from YouTube and display them on the dashboard.
+
+You can also increase the number of results using maximumResults.
 
 ## Exporting Data
 To export the displayed statistics as an Excel spreadsheet, follow these steps click the "Save Excel Sheet" button located at the top-left corner of the dashboard.

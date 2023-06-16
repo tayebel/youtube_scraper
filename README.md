@@ -23,7 +23,7 @@ The YouTube Channel Statistics Dashboard is a simple Python tool that generates 
 
    ```bash
    git clone https://github.com/tayebel/yt.git
-   cd yt
+   cd youtube_scraper
    pip install  -r requirements.txt  -t ./
    ```
    

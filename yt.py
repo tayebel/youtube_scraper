@@ -1,7 +1,7 @@
 from  lib_api import *
 
 class yt_analysis:
-    def __init__(self,
+    def __init__(self,usernam=None,
                     channelType=None,
                     eventType=None,
                     location=None,
@@ -14,7 +14,7 @@ class yt_analysis:
                     publishedAfter=None,
                     publishedBefore=None,
                     relevanceLanguage=None):
-      
+        self.usernam=usernam
         self.channelType=channelType
         self.eventType=eventType
         self.location=location
@@ -73,11 +73,15 @@ class yt_analysis:
  
         
     def chan_stats(self):
-            self.ids_chan=self.yt_search()
+            if self.usernam is None:
+                self.ids_chan=self.yt_search()
+                idd=','.join(self.ids_chan)
+            else:
+                idd=None
             stats_request = youtube.channels().list(
                 part="snippet,contentDetails,statistics,topicDetails",
-                id=','.join(self.ids_chan)
-                    )
+                id=idd,
+                forUsername=self.usernam    )
             chan_response = stats_request.execute()
             self.data=[]
             self.username=[]

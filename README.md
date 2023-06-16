@@ -7,14 +7,14 @@
 - [Introduction](#introduction)
 - [Installation](#installation)
 - [Usage](#usage)  
-- [Keyword Search](#search)
+- [Search](#search)
 - [Exporting Data](#exporting-data)
 - [Contributing](#contributing)
 
 
 ## Introduction
 
-The YouTube Channel Statistics Dashboard is a simple Python tool that generates an interactive dashboard using the Plotly library. It allows users to visualize various (Views, Total videos and Number subscribers) statistics of YouTube channels based on keywords provided by the user. The dashboard provides a comprehensive overview of the channel's performance and allows users to save the results as an Excel spreadsheet.
+The YouTube scraper is a simple Python tool that generates an interactive dashboard using the Plotly library. It allows users to visualize various (Views, Total videos and Number subscribers) statistics of YouTube channels based on the inputs (keywords, username ...)  provided by the user. The dashboard provides a comprehensive overview of the channel's performance and allows users to save the results as an Excel spreadsheet.
 
 ## Installation
 
@@ -45,7 +45,7 @@ The tool will retrieve the search results from YouTube and display them on the d
 You can also increase the number of results using maximumResults.
 
 ## Exporting Data
-To export the displayed statistics as an Excel spreadsheet, follow these steps click the "Save Excel Sheet" button located at the top-left corner of the dashboard.
+To export the displayed statistics as an Excel spreadsheet, click the "Save Excel Sheet" button located at the top-left corner of the dashboard.
 
 ## Contributing
 Contributions to the YouTube Channel Statistics Dashboard are welcome! If you find any bugs or have suggestions for improvements, please open an issue on the GitHub repository. If you would like to contribute code, feel free to submit a pull request.

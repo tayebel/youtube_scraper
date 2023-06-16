@@ -6,8 +6,7 @@
 
 - [Introduction](#introduction)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Configuration](#configuration)
+- [Usage](#usage)  
 - [Keyword Search](#search)
 - [Exporting Data](#exporting-data)
 - [Contributing](#contributing)
@@ -32,12 +31,10 @@ Run the Python script:
 ```bash
  python run.py
  ```
-    
+Enter your YouTube Data API key.  
 Open your web browser and visit http://localhost:8052 to access the dashboard.
 
-## Configuration
-Before running the tool, make sure to configure the following :  
-API_KEY: Your YouTube Data API key. You can obtain one by following the instructions at https://developers.google.com/youtube/registering_an_application.
+NOTE: Before running the tool, make sure to get Your YouTube Data API key.  You can obtain one by following the instructions at https://developers.google.com/youtube/registering_an_application.
 
 
 ## Search

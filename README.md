@@ -1,8 +1,6 @@
 # YouTube Channels Statistics Dashboard
 ![Table](image1.png)
 ![Figures](image2.png)
-contacts :   
-[![LinkedIn](linkedin.png)](https://www.linkedin.com/in/tayebelmehadji/)
 
 
 ## Table of Contents
@@ -55,6 +53,8 @@ Contributions to the YouTube Channel Statistics Dashboard are welcome! If you fi
 
 Please ensure that your contributions adhere to the coding conventions and include appropriate tests and documentation.
 
+contact me :   
+[![LinkedIn](linkedin.png)](https://www.linkedin.com/in/tayebelmehadji/) 
 
 
 

@@ -53,11 +53,11 @@ Contributions to the YouTube Channel Statistics Dashboard are welcome! If you fi
 Please ensure that your contributions adhere to the coding conventions and include appropriate tests and documentation.
 <<<<<<< HEAD
 
-contacts: 
+contacts:     
 [![Gmail](gmail.png)](mailto:t.elmehadji@gmail.com) [![LinkedIn](linkedin.png)](https://www.linkedin.com/in/tayebelmehadji/)
-=======
+
  
-[![LinkedIn](linkedin.png)](https://www.linkedin.com/in/tayebelmehadji/) 
+
 
 
 

@@ -54,7 +54,7 @@ Please ensure that your contributions adhere to the coding conventions and inclu
 <<<<<<< HEAD
 
 contacts:     
-[![Gmail](gmail.png)](mailto:t.elmehadji@gmail.com) [![LinkedIn](linkedin.png)](https://www.linkedin.com/in/tayebelmehadji/)
+[![Gmail](gmail.png)](mailto:t.elmehadji@gmail.com)  [![LinkedIn](linkedin.png)](https://www.linkedin.com/in/tayebelmehadji/)
 
  
 

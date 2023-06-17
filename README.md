@@ -1,4 +1,4 @@
-# YouTube Channels Statistics Dashboard
+## YouTube Channels Statistics Dashboard
 ![Table](image1.png)
 ![Figures](image2.png)
 
@@ -51,7 +51,6 @@ To export the displayed statistics as an Excel spreadsheet, click the "Save Exce
 Contributions to the YouTube Channel Statistics Dashboard are welcome! If you find any bugs or have suggestions for improvements, please open an issue on the GitHub repository. If you would like to contribute code, feel free to submit a pull request.
 
 Please ensure that your contributions adhere to the coding conventions and include appropriate tests and documentation.
-<<<<<<< HEAD
 
 contacts:     
 [![Gmail](gmail.png)](mailto:t.elmehadji@gmail.com)  [![LinkedIn](linkedin.png)](https://www.linkedin.com/in/tayebelmehadji/)

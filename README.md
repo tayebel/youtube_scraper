@@ -1,11 +1,6 @@
 # YouTube Channels Statistics Dashboard
 ![Table](image1.png)
 ![Figures](image2.png)
-<<<<<<< HEAD
-
-=======
->>>>>>> d2987129f154ceaabd076bdba48ee2b1dbad4aa8
-
 
 ## Table of Contents
 
@@ -64,7 +59,7 @@ contacts:
  
 [![LinkedIn](linkedin.png)](https://www.linkedin.com/in/tayebelmehadji/) 
 
->>>>>>> d2987129f154ceaabd076bdba48ee2b1dbad4aa8
+
 
 
  

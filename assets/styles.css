@@ -1,0 +1,61 @@
+/* CSS Styles */
+
+body {
+  background-color: #e6e6e6;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #e6e6e6;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  background-color:#e6e6e6;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  background-color: #e6e6e6;
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #010101;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  background-color: #646161;
+  color: #fff;
+  border: black;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: left;
+  
+}
+button:last-child {
+  margin-right: 0;
+}
+button:hover {
+  background-color: #a09797;
+}
+
+.error-message {
+  color: red;
+}
+
+/* Add your custom styles below this line */

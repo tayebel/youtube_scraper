@@ -12,7 +12,8 @@ class dashboard(yt_analysis):
             self.data, self.username, self.video_total, self.subscriber, self.view = self.chan_stats()
             country_codes = [country.alpha_2 for country in pycountry.countries]
 
-            app = dash.Dash(__name__)
+            app = dash.Dash(__name__,assets_folder='assets')
+           
             app.layout = html.Div(children=[
                 html.H1(children='Youtube channels analysis dashboard: '),
                 html.Div(children='''This dash is A web application framework to visualize and analyze different youtube channels  '''),
@@ -39,13 +40,13 @@ class dashboard(yt_analysis):
                         
                     ],
                     value=[],
-                    multi=True,style={'backgroundColor': 'black', 'color': 'white'}
+                    multi=True
                 ),
 
                 html.Div(id='input-q-container', children=[
                     html.Label('Enter a keyword:'),
                     dcc.Input(id='input-q', type='text')
-                ], style={'backgroundColor': 'black', 'color': 'white'}),
+                ], style={'display': 'none'}),
 
                 html.Div(id='input-m-container', children=[
                     html.Label('Enter the maximum results:'),
@@ -108,9 +109,10 @@ class dashboard(yt_analysis):
 
                 html.Div(id='body-div'),
 
-                dcc.RadioItems(options=['number_of_videos', 'views', 'subscribers'], value='views', id='controls-and-radio-item'),
-
+               
+                
                 dash_table.DataTable(page_size=6, id='tbl'),
+                dcc.RadioItems(options=['number_of_videos', 'views', 'subscribers'], value='views', id='controls-and-radio-item'),
                 dcc.Graph(figure={}, id='controls-and-graph'),
                 dcc.Graph(figure={}, id='controls')
             ])
@@ -164,11 +166,13 @@ class dashboard(yt_analysis):
                 Output(component_id='controls-and-graph', component_property='figure'),
                 Output(component_id='controls', component_property='figure'),
                 Input('update-button', 'n_clicks'),
+                Input(component_id='controls-and-radio-item', component_property='value'),
+                
                 *[State(f'input-{input_param}', 'value') for input_param in ['q', 'm', 'r', 'c',
                                                                             'e', 'l', 'lr', 'cd', 'p']],
-                State('input-type', 'value'),
-                State(component_id='controls-and-radio-item', component_property='value'))
-            def update(n_clicks, input_q, input_m,input_r,input_c,input_e,input_l,input_lr,input_cd,input_p, input_type, col_chosen):
+                State('input-type', 'value'))
+                
+            def update(n_clicks,col_chosen, input_q, input_m,input_r,input_c,input_e,input_l,input_lr,input_cd,input_p, input_type):
                 if n_clicks is not None:
                     if 'keyword' in input_type:
                         self.keyword = input_q
@@ -208,14 +212,20 @@ class dashboard(yt_analysis):
                         self.publishedAfter = input_p
                     else:
                         self.publishedAfter = None 
-                    
+                       
                     self.data, self.username, self.video_total, self.subscriber, self.view = self.chan_stats()
-                    df = pd.DataFrame(self.data)
-                    fig2 = px.pie(df, values=col_chosen, names='channel_name')
-                    fig = px.histogram(df, x='channel_name', y=col_chosen, histfunc='avg')
-                    return self.data, fig, fig2
-                else:
-                    raise PreventUpdate
+                df = pd.DataFrame(self.data)
+                fig2 = px.pie(df, values=col_chosen, names='channel_name')
+                fig = px.histogram(df, x='channel_name', y=col_chosen, histfunc='avg')
+               
+                return self.data,fig,fig2
+            
+            
+         
+                
+
+
+
 
             @app.callback(
                 Output(component_id='body-div', component_property='children'),

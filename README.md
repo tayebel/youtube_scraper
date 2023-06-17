@@ -1,6 +1,8 @@
 # YouTube Channels Statistics Dashboard
 ![Table](image1.png)
 ![Figures](image2.png)
+[![LinkedIn](linkedin.png)](https://www.linkedin.com/in/tayebelmehadji/) [![Email](gmail.png)](t.elmehadji@gmail.com)
+
 
 ## Table of Contents
 

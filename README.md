@@ -1,7 +1,8 @@
 # YouTube Channels Statistics Dashboard
 ![Table](image1.png)
 ![Figures](image2.png)
-contact me : [![LinkedIn](linkedin.png)](https://www.linkedin.com/in/tayebelmehadji/)
+contacts :   
+[![LinkedIn](linkedin.png)](https://www.linkedin.com/in/tayebelmehadji/)
 
 
 ## Table of Contents

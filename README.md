@@ -13,7 +13,6 @@
 
 
 ## Introduction
-
 The YouTube scraper is a simple Python tool that generates an interactive dashboard using the Plotly library. It allows users to visualize various (Views, Total videos and Number subscribers) statistics of YouTube channels based on the inputs (keywords, username ...)  provided by the user. The dashboard provides a comprehensive overview of the channel's performance and allows users to save the results as an Excel spreadsheet.
 
 ## Installation

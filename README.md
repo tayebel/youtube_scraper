@@ -34,7 +34,7 @@ Run the Python script:
 Enter your YouTube Data API key.  
 Open your web browser and visit http://localhost:8052 to access the dashboard.
 
-NOTE: Before running the tool, make sure to get Your YouTube Data API key.  You can obtain one by following the instructions at https://developers.google.com/youtube/registering_an_application.
+NOTE: Before running the tool, make sure to get Your YouTube Data API key.  You can obtain one by following the instructions [here]([https://resinsight.org/getting-started/download-and-install/](https://developers.google.com/youtube/registering_an_application)).
 
 
 ## Search

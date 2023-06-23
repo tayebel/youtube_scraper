@@ -1,14 +1,14 @@
 /* CSS Styles */
 
 body {
-  background-color: #e6e6e6;
+  background-color: #f6f5f5;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  background-color: #e6e6e6;
+
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
@@ -38,20 +38,22 @@ select {
 
 button {
   margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   padding: 5px 10px;
-  background-color: #646161;
-  color: #fff;
+  background-color: #f6efef;
   border: black;
   border-radius: 4px;
   cursor: pointer;
-  text-align: left;
+  text-align: right;
+  
   
 }
 button:last-child {
   margin-right: 0;
 }
 button:hover {
-  background-color: #a09797;
+  background-color: #4dc8db;
 }
 
 .error-message {
